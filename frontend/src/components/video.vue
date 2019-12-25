@@ -1,5 +1,7 @@
 <template>
-  <video-player  class="video-player-box vjs-default-skin vjs-big-play-centered"
+  <video-player  class="vjs-custom-skin vjs-big-play-centered"
+                 height:200
+                 weight:1080
                  ref="videoPlayer"
                  :options="playerOptions"
                  :playsinline="true"
@@ -32,15 +34,18 @@
           muted: true,
           language: 'en',
           playbackRates: [0.7, 1.0, 1.5, 2.0],
-          fluid: true,
+          fluid: false,
           preload: 'auto',
           autoplay: false,
           muted: false,
+          // aspectRatio: '16:9',
           sources: [{
             type: "video/mp4",
             src: "https://cdn.theguardian.tv/webM/2015/07/20/150716YesMen_synd_768k_vp8.webm"
           }],
-          poster: "https://surmon-china.github.io/vue-quill-editor/static/images/surmon-1.jpg",
+           poster: "https://surmon-china.github.io/vue-quill-editor/static/images/surmon-1.jpg",
+           // width: document.documentElement.clientWidth,
+           // height:document.documentElement.clientHeight,
         }
       }
     },
