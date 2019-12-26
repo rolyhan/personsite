@@ -19,14 +19,14 @@ export default {
   data() {
       return {
         count:4,
-        icons:["fa fa-tv","fa fa-building",
-               "fa fa-code","fa fa-youtube"],
+        icons:["fa fa-home","fa fa-music",
+               "fa fa-film","fa fa-bookmark"],
         // list:["https://www.baidu.com/",
         //     "http://jd.com",
         //     "http://jd.com",
         //     "http://jd.com"],
-        list:[{'isLink':false},{'isLink':true,url:"/doo"},{'isLink':true,url:"/foo"},{'isLink':false}],
-        backgroundColor:'#0a93f5',
+        list:[{'isLink':true,url:"./"},{'isLink':true,url:"/doo"},{'isLink':true,url:"/foo"},{'isLink':false}],
+        backgroundColor:'#c5149c',
         color:'#eee',
         position:'top-right',
         isOpenNewTab:false,
@@ -49,9 +49,6 @@ export default {
       if(key===3){
         console.log('please send me an email')
       }
-      if(key===0){
-          window.open('https://www.baidu.com/')
-        }
       }
   }
 }

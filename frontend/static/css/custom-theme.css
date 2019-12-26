@@ -42,7 +42,7 @@
 }
 
 .vjs-custom-skin > .video-js .vjs-mouse-display:after,.vjs-custom-skin > .video-js .vjs-play-progress:after {
-  padding: 0 .4em .3em
+  padding: 0em 0em
 }
 
 .video-js.vjs-ended .vjs-loading-spinner {
